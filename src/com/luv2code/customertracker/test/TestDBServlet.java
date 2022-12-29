@@ -1,4 +1,4 @@
-package com.luv2code.test;
+package com.luv2code.customertracker.test;
 
 import java.io.IOException;
 import java.io.PrintWriter;
