@@ -22,7 +22,7 @@ public class CustomerDAOImpl implements CustomerDAO {
 	@Transactional
 	public List<Customer> get_Customers() {
 
-		Session session = sessionFactory.openSession();
+		Session session = sessionFactory.getCurrentSession();
 		String query = "from Customer";
 		List<Customer> customers = session.createQuery(query,Customer.class).getResultList();
 		return customers;
